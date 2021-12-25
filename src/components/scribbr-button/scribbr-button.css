@@ -1,4 +1,8 @@
+:host {
+  --background: var(--primary-color, pink);
+}
+
 button {
-  background-color: var(--primary-color);
+  background: var(--background);
   font-family: 'Pushster', cursive;
 }
