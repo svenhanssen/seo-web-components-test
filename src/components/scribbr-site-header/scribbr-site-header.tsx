@@ -10,8 +10,7 @@ export class ScribbrSiteHeader {
   render() {
     return (
       <div>
-        <h1>Scribbr</h1>
-        <h2>Header 2</h2>
+        <h2>Menu</h2>
         <nav>
           <a href="#">Home</a>
           <a href="#">Services</a>
