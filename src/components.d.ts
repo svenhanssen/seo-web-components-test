@@ -8,6 +8,8 @@ import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface ScribbrButton {
     }
+    interface ScribbrFoo {
+    }
     interface ScribbrSiteHeader {
     }
 }
@@ -18,6 +20,12 @@ declare global {
         prototype: HTMLScribbrButtonElement;
         new (): HTMLScribbrButtonElement;
     };
+    interface HTMLScribbrFooElement extends Components.ScribbrFoo, HTMLStencilElement {
+    }
+    var HTMLScribbrFooElement: {
+        prototype: HTMLScribbrFooElement;
+        new (): HTMLScribbrFooElement;
+    };
     interface HTMLScribbrSiteHeaderElement extends Components.ScribbrSiteHeader, HTMLStencilElement {
     }
     var HTMLScribbrSiteHeaderElement: {
@@ -26,16 +34,20 @@ declare global {
     };
     interface HTMLElementTagNameMap {
         "scribbr-button": HTMLScribbrButtonElement;
+        "scribbr-foo": HTMLScribbrFooElement;
         "scribbr-site-header": HTMLScribbrSiteHeaderElement;
     }
 }
 declare namespace LocalJSX {
     interface ScribbrButton {
     }
+    interface ScribbrFoo {
+    }
     interface ScribbrSiteHeader {
     }
     interface IntrinsicElements {
         "scribbr-button": ScribbrButton;
+        "scribbr-foo": ScribbrFoo;
         "scribbr-site-header": ScribbrSiteHeader;
     }
 }
@@ -44,6 +56,7 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "scribbr-button": LocalJSX.ScribbrButton & JSXBase.HTMLAttributes<HTMLScribbrButtonElement>;
+            "scribbr-foo": LocalJSX.ScribbrFoo & JSXBase.HTMLAttributes<HTMLScribbrFooElement>;
             "scribbr-site-header": LocalJSX.ScribbrSiteHeader & JSXBase.HTMLAttributes<HTMLScribbrSiteHeaderElement>;
         }
     }

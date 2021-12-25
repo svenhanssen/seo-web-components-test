@@ -11,6 +11,7 @@ export class ScribbrSiteHeader {
     return (
       <div>
         <h1>Scribbr</h1>
+        <h2>Header 2</h2>
         <nav>
           <a href="#">Home</a>
           <a href="#">Services</a>
