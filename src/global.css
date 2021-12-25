@@ -1,0 +1,12 @@
+:root {
+  --primary-color: #488aff;
+}
+
+body {
+  background: grey;
+}
+
+.test {
+  padding: 1rem;
+  background: var(--primary-color)
+}

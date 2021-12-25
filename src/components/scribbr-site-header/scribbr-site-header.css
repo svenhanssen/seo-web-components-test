@@ -1,0 +1,8 @@
+h1 {
+  color: red;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+}
